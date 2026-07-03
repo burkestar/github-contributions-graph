@@ -1,0 +1,1 @@
+"""GitHub contributions heatmap renderer."""

@@ -1,0 +1,24 @@
+[project]
+name = "github-contributions"
+version = "0.1.0"
+description = "Render a multi-year GitHub contributions heatmap to PNG"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "matplotlib>=3.11.0",
+    "numpy>=2.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.mypy]
+mypy_path = "src"
+python_version = "3.12"
